@@ -18,8 +18,15 @@ public class lineComparision {
 		double length = 0;
 		double x = Math.pow((x2-x1),2);
 		double y = Math.pow((y2-y1),2);
-		length = Math.sqrt(x+y);
-		System.out.println("Line Length : "+ length);
+
+		String obj1 =String.valueOf(x);
+		String obj2 =String.valueOf(y);
+		boolean result = obj1.equals(obj2);
+		if(result == true ){
+            System.out.println("The Two Lines Are Equal");
+        } else {
+            System.out.println("The Two Lines Are Not Equal");
+        }
 	}
 
 }
